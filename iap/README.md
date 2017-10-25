@@ -85,3 +85,12 @@ For all other environments:
    Identity-Aware Proxy access list for the project.
 4. Update iap_test.py with the hostname for your project.
 5. Run the command: ```GOOGLE_CLOUD_PROJECT=project-id pytest iap_test.py```
+
+## Get OpenID Connect
+
+
+1. Install the libraries listed in `requirements.txt`, e.g. by running:
+   ```
+   virtualenv/bin/pip install -r requirements.txt
+
+2. Run the command: ```python iap_get_oidc.py```

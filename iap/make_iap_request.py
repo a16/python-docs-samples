@@ -90,6 +90,7 @@ def make_iap_request(url, client_id):
     # which is a JWT signed by Google.
     google_open_id_connect_token = get_google_open_id_connect_token(
         service_account_credentials)
+    print(google_open_id_connect_token)
 
     # Fetch the Identity-Aware Proxy-protected URL, including an
     # Authorization header containing "Bearer " followed by a
